@@ -1,0 +1,164 @@
+
+.customer-review
+{
+   
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+.review-head{
+   
+    
+    text-align: center;
+    text-shadow: 2px 2px gray;
+    font-size: 40px;
+    font-weight: bold;
+
+}
+
+.review-con
+{
+   
+    height: auto;
+    display: flex;
+    margin: 30px 0px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+}
+.review-bx
+{
+    
+    width: 25%;
+    height: 40vh;
+    text-align: center;
+    align-content: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    border-radius: 25px;
+
+}
+.review-para
+{
+
+    width: 70%;
+    margin-left: 15%;
+    text-align: justify;
+    
+}
+.review-btn
+{
+    
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+
+   
+}
+.review-bttn{
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  border: 2px solid #fefefe;
+  text-transform: uppercase;
+  color: #080101;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+}
+button {
+ display: inline-block;
+ border-radius: 4px;
+ background-color: #EE685F;
+ border: none;
+ color: #FFFFFF;
+ text-align: center;
+ font-size: 17px;
+ padding: 16px;
+ width: 130px;
+ transition: all 0.5s;
+ cursor: pointer;
+ margin: 5px;
+}
+
+button span {
+ cursor: pointer;
+ display: inline-block;
+ position: relative;
+ transition: 0.5s;
+}
+
+button span:after {
+ content: '»';
+ position: absolute;
+ opacity: 0;
+ top: 0;
+ right: -15px;
+ transition: 0.5s;
+}
+
+button:hover span {
+ padding-right: 15px;
+}
+
+button:hover span:after {
+ opacity: 1;
+ right: 0;
+}
+
+@media screen and (max-width:400px) {
+    .customer-review
+    {
+        height: auto;
+        margin-top: 10px;
+       
+
+    }
+    .review-head
+    {
+        
+        padding: 10px;
+    }
+ 
+    .review-bx
+    {
+        
+        width: 90%;
+        height: auto;
+        margin-left: 2%;
+        padding: 10px;
+    
+        
+    }
+    .review-para
+    {
+       
+        width: 90%;
+        margin-left: 5%;;
+    }
+    .review-all
+    {
+        height: 4vh;
+        width: 30%;
+
+    }
+    .recent-post
+    {
+        height: auto;
+    }
+    .post-img
+    {
+       
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .post-img-con
+    {
+        width: 95%;
+        
+    }
+    
+}

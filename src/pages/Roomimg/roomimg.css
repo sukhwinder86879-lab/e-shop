@@ -1,0 +1,142 @@
+.room-glry
+{
+   
+    height: auto;
+}
+.glry-head
+{
+ 
+    
+    display: flex;
+  justify-content: center;
+  padding: 10px;
+  
+}
+.img-heading
+{
+    text-align: center;
+       text-shadow: 2px 2px gray;
+    font-size: 40px;
+    font-weight: bold;
+   
+}
+.show{
+  cursor: pointer;
+  position: relative;
+  padding: 10px 24px;
+  font-size: 14px;
+  color: #EE685F;
+  border: 2px solid #EE685F;
+  border-radius: 34px;
+  background-color: transparent;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  overflow: hidden;
+  text-align: center;
+}
+
+.show::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  border-radius: inherit;
+  scale: 0;
+  z-index: -1;
+  background-color: #EE685F;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.button:hover::before {
+  scale: 3;
+}
+
+.show:hover {
+  color: #212121;
+  scale: 1.1;
+  box-shadow: 0 0px 20px rgba(11, 8, 2, 0.4);
+}
+
+.show:active {
+  scale: 1;
+}
+
+.room-img
+{
+   
+    margin: 30px 0px;
+    
+}
+.img-box
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 7rem;
+    padding: 20px;
+    
+  }
+  .view-btn
+  {
+    
+  
+    display: flex;
+    justify-content: center;
+}
+button {
+ display: inline-block;
+ border-radius: 4px;
+ background-color: #EE685F;
+ border: none;
+ color: #FFFFFF;
+ text-align: center;
+ font-size: 17px;
+ padding: 16px;
+ width: 130px;
+ transition: all 0.5s;
+ cursor: pointer;
+ margin: 5px;
+
+}
+
+button span {
+ cursor: pointer;
+ display: inline-block;
+ position: relative;
+ transition: 0.5s;
+}
+
+button span:after {
+ content: '»';
+ position: absolute;
+ opacity: 0;
+ top: 0;
+ right: -15px;
+ transition: 0.5s;
+}
+
+button:hover span {
+ padding-right: 15px;
+}
+
+button:hover span:after {
+ opacity: 1;
+ right: 0;
+}
+
+
+@media screen and (max-width:400px) {
+ 
+    .room-img
+    {
+        margin-top: 0;
+    }
+    .img-box
+    {
+    
+        gap: 2rem;
+
+    }
+}

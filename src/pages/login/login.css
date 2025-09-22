@@ -1,0 +1,29 @@
+.registered1
+{
+    
+     margin: 10px 0px;
+     border-radius: 30px;
+     width: 30%;
+     display: flex;
+     padding: 20px 0px;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: center;
+     padding: 10px;
+     gap: 2rem;
+     box-shadow:  1px 2px 2px 2px black ;
+
+}
+form h1
+{
+    text-shadow: 2px 2px gray;
+    font-size: 40px;
+    font-weight: bold;
+}
+@media screen and (max-width:400px) {
+    .registered1
+    {
+        width: 90%;
+    }
+    
+}

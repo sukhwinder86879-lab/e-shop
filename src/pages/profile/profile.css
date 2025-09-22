@@ -1,0 +1,47 @@
+.profile-con
+{
+   
+    height: 100vh;
+    align-content: center;
+    text-align: center;
+}
+.profile-data
+{
+    margin-left: 35%;
+   box-shadow:  1px 2px 2px 2px black ;
+    width: 30%;
+    height: 40%;
+    gap: 2rem;
+   
+    
+}
+.profile-icon
+{
+    font-size:  100px;
+    padding: 10px;
+   
+}
+.user-name
+{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    line-height: 3rem;
+    
+}
+@media screen and (max-width: 400px) {
+    .profile-data
+    {
+        margin-left: 10%;
+        width: 80%;
+        
+    }
+    .profile-icon
+    {
+        padding: 10px;
+
+    }
+    
+}
